@@ -19,13 +19,14 @@ namespace PersonalRegister
                 Console.WriteLine("\nChoose an option: ");
                 Console.WriteLine("1. Add Employee");
                 Console.WriteLine("2. Print Register");
-                Console.WriteLine("3. Exit");
-
+                Console.WriteLine("3. Remove Employee");
+                Console.WriteLine("4. Exit");
+                Console.Write("Input: ");
                 int choice = int.Parse(Console.ReadLine());
 
                 switch (choice) { 
                     case 1:
-                        Console.Write("\nEnter employee Name: ");
+                        Console.Write("\nEnter employee name: ");
                         string name = Console.ReadLine();
 
                         Console.Write("Enter salary of the employee: ");
@@ -39,6 +40,11 @@ namespace PersonalRegister
                         break;
 
                     case 3:
+                        Console.Write("\nEnter employee name, who you want to remove: ");
+                        registerEmployee.RemoveEmployee(Console.ReadLine());
+                        break;
+
+                    case 4:
                         return;
 
 
