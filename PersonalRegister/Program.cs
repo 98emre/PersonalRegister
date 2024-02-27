@@ -30,6 +30,13 @@ namespace PersonalRegister
                         string name = Console.ReadLine();
 
                         Console.Write("Enter salary of the employee: ");
+                        int salary;
+
+                        if (!int.TryParse(Console.ReadLine(), out salary))
+                        {
+                            Console.WriteLine("Invalid salary. Please enter a valid number.");
+                            continue;
+                        }
 
                         int salary;
 
