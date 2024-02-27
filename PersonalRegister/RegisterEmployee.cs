@@ -20,7 +20,13 @@ namespace PersonalRegister
 
             if (employees.ContainsKey(trimmedName))
             {
-                Console.WriteLine("Employee: " + trimmedName + " already exist, try again");
+                Console.WriteLine("Employee: " + trimmedName + " already exist.");
+                return;
+            }
+
+            if (salary <= 0)
+            {
+                Console.WriteLine("Invalid salary. Salary must be greater than zero.");
                 return;
             }
 
