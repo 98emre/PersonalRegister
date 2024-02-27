@@ -24,6 +24,12 @@ namespace PersonalRegister
                 return;
             }
 
+            if (salary <= 0)
+            {
+                Console.WriteLine("Invalid salary. Salary must be greater than zero.");
+                return;
+            }
+
             employees.Add(trimmedName, new Employee(trimmedName, salary));
 
         }
