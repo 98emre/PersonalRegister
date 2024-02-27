@@ -31,16 +31,5 @@ namespace PersonalRegister
         public int getSalary() { 
             return this.salary;
         }
-
-        public String toString()
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append(this.name);
-            sb.Append(" ");
-            sb.Append(this.salary);
-
-            return sb.ToString();
-        }
-
     }
 }
